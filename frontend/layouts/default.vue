@@ -1,17 +1,20 @@
 <template>
 	<div class="font-light">
-		<Header />
+		<HeaderSection />
 
 		<Nuxt />
+
+		<FooterSection />
 	</div>
 </template>
 
 <script>
 
-	import Header from '~/components/sections/Header'
+	import HeaderSection from '~/components/sections/Header'
+	import FooterSection from '~/components/sections/Footer'
 
 	export default {
-		components: { Header }
+		components: { HeaderSection, FooterSection }
 	}
 
 </script>

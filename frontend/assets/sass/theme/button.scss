@@ -1,20 +1,10 @@
 .btn {
-	display: flex;
-	align-items: center;
-	border-radius: 10px;
+	@apply inline-flex items-center justify-center h-12 px-10 rounded-xl space-x-2 select-none;
 
-	&-white {
-		border-color: #fff;
-		background-color: #fff;
-		color: #000;
+	&-primary {
+		@apply bg-blue-600 text-white text-lg tracking-wide;
 	}
-	&-outline {
-		border-width: 1px;
-		border-style: solid;
-		background-color: transparent;
-
-		&.btn-white {
-			color: #fff;
-		}
+	&-black {
+		@apply bg-gray-900 text-white h-12 px-10;
 	}
 }
