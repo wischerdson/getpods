@@ -1,10 +1,10 @@
 .btn {
-	@apply inline-flex items-center justify-center h-12 px-10 rounded-xl space-x-2 select-none;
+	@apply inline-flex items-center justify-center rounded-xl space-x-2 select-none;
 
 	&-primary {
-		@apply bg-blue-600 text-white text-lg tracking-wide;
+		@apply bg-blue-600 text-white text-lg tracking-wide h-12 px-10;
 	}
 	&-black {
-		@apply bg-gray-900 text-white h-12 px-10;
+		@apply bg-gray-900 text-white h-12 px-10 h-12 px-10;
 	}
 }

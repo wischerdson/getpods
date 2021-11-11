@@ -28,11 +28,22 @@
 					</div>
 				</div>
 
-				<div class="h-full"></div>
+				<product-card-slider />
 			</div>
 		</div>
 	</section>
 </template>
+
+
+<script>
+
+	import ProductCardSlider from '~/components/ProductCardSlider'
+
+	export default {
+		components: { ProductCardSlider }
+	}
+
+</script>
 
 <style lang="scss" scoped>
 

@@ -1,5 +1,5 @@
 <template>
-	<div class="page_home">
+	<div>
 		<WelcomeSection />
 		<div class="space-y-14">
 			<ProductCardSection />
@@ -10,8 +10,8 @@
 
 <script>
 
-	import WelcomeSection from '~/components/sections/home/Welcome'
-	import ProductCardSection from '~/components/sections/home/ProductCard'
+	import WelcomeSection from '~/sections/home/Welcome'
+	import ProductCardSection from '~/sections/home/ProductCard'
 
 	export default {
 		components: { WelcomeSection, ProductCardSection },

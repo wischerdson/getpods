@@ -10,8 +10,8 @@
 
 <script>
 
-	import HeaderSection from '~/components/sections/Header'
-	import FooterSection from '~/components/sections/Footer'
+	import HeaderSection from '~/sections/Header'
+	import FooterSection from '~/sections/Footer'
 
 	export default {
 		components: { HeaderSection, FooterSection }

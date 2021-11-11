@@ -1,0 +1,76 @@
+<template>
+	<div ref="slider" class="swiper-container h-full overflow-hidden relative">
+		<div class="swiper-wrapper h-full relative z-10">
+			<div class="swiper-slide w-full h-full" v-for="slide in slides">
+				<img class="w-full h-full object-center object-cover" :src="slide" alt="">
+			</div>
+		</div>
+
+		<div class="absolute inset-x-0 bottom-0 z-20 pb-4 flex justify-center" ref="pagination"></div>
+		<div class="absolute inset-4 z-20 flex justify-center pointer-events-none">
+			<div class="absolute inset-y-0 left-0 flex items-center">
+				<button class="btn w-8 h-8 rounded-full bg-gray-300 pointer-events-auto" ref="navPrev">
+					<Icon width="30px" height="30px" class="text-gray-600" name="chevron_left" />
+				</button>
+			</div>
+			<div class="absolute inset-y-0 right-0 flex items-center">
+				<button class="btn w-8 h-8 rounded-full bg-gray-300 pointer-events-auto" ref="navNext">
+					<Icon width="30px" height="30px" class="text-gray-600" name="chevron_right" />
+				</button>
+			</div>
+		</div>
+	</div>
+</template>
+
+<script>
+
+	export default {
+		data () {
+			return {
+				swiper: null,
+				slides: [
+					'https://static7.depositphotos.com/1307373/786/i/950/depositphotos_7865491-stock-photo-spring-landscape-in-the-national.jpg',
+					'https://pbs.twimg.com/media/Cikv2JUUoAA5BGe.jpg',
+					'https://uwalls.com/img/gallery/8/thumbs/thumb_l_nus_21895.jpg',
+				],
+			}
+		},
+		mounted () {
+			this.swiper = new this.$swiper(this.$refs.slider, {
+				resistanceRatio: 0.4,
+				navigation: {
+					nextEl: this.$refs.navNext,
+					prevEl: this.$refs.navPrev,
+				},
+				speed: 600,
+				pagination: {
+					el: this.$refs.pagination,
+					bulletElement: 'button',
+					clickable: true,
+				},
+			})
+		}
+	}
+
+</script>
+
+<style lang="scss">
+
+	.swiper-pagination-bullet {
+		padding: 5px;
+
+		&:before {
+			content: "";
+			width: 10px;
+			height: 10px;
+			@apply block bg-gray-300 transition-colors rounded-full;
+		}
+		&.swiper-pagination-bullet-active {
+			&:before {
+				@apply bg-blue-600;
+			}
+		}
+	}
+
+
+</style>
