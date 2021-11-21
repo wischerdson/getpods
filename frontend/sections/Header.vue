@@ -1,5 +1,5 @@
 <template>
-	<header class="fixed inset-x-0 top-0 z-30" data-aos1="fade-down" data-aos1-delay="300">
+	<header class="fixed inset-x-0 top-0 z-30" data-aos="fade-down" data-aos-delay="300">
 		<div class="container">
 			<nav class="grid grid-cols-3 backdrop-filter backdrop-blur-xl rounded-3xl bg-white/80 px-5 mt-4">
 				<div class="h-full flex justify-start items-center">

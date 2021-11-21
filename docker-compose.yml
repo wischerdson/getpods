@@ -1,19 +1,6 @@
 version: "3"
 
 services:
-  apache:
-    image: httpd:2.4-alpine3.14
-    ports:
-      - 8080:80
-    volumes:
-      - ./public:/usr/local/apache2/htdocs
-      - ./docker-images/httpd:/usr/local/apache2/conf
-
-  php:
-    image: php:8.0-fpm
-    volumes:
-      - ./public:/usr/local/apache2/htdocs
-
   nodejs:
     image: node:17-alpine3.14
     ports:
@@ -23,7 +10,4 @@ services:
     working_dir: "/usr/app/nuxt"
     environment:
       NODE_OPTIONS: --openssl-legacy-provider
-    command:
-      - npm
-      - run
-      - dev
+    command: npm run dev

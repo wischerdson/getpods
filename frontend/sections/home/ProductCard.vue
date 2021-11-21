@@ -1,7 +1,7 @@
 <template>
-	<section>
+	<section ref="card">
 		<div class="container">
-			<div class="card bg-white rounded-3xl grid grid-cols-2 overflow-hidden">
+			<div class="card bg-white rounded-3xl grid grid-cols-2 overflow-hidden relative z-10">
 				<div class="h-full bg-gray-50 flex items-center px-16">
 					<div>
 						<h2 class="font-bold text-5xl text-gray-900">AirPods 2 поколение</h2>
@@ -28,7 +28,7 @@
 					</div>
 				</div>
 
-				<product-card-slider />
+				<product-card-slider demonstrate="cardInViewport" />
 			</div>
 		</div>
 	</section>
@@ -37,10 +37,30 @@
 
 <script>
 
+	const canISeeEl = ($el) => {
+		const rect = $el.getBoundingClientRect();
+		return (
+			rect.top >= 0 &&
+			rect.left >= 0 &&
+			rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+			rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+		);
+	}
+
 	import ProductCardSlider from '~/components/ProductCardSlider'
 
 	export default {
-		components: { ProductCardSlider }
+		components: { ProductCardSlider },
+		data () {
+			return {
+				cardInViewport: false
+			}
+		},
+		mounted () {
+			window.addEventListener('scroll', () => {
+				this.cardInViewport = canISeeEl(this.$refs.card)
+			})
+		}
 	}
 
 </script>

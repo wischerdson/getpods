@@ -2,7 +2,7 @@
 	<div>
 		<WelcomeSection />
 		<div class="space-y-14">
-			<ProductCardSection />
+			<!-- <ProductCardSection /> -->
 			<ProductCardSection />
 		</div>
 	</div>
