@@ -4,7 +4,7 @@
 			<nav class="grid grid-cols-[.5fr,1fr,.5fr] lg:flex lg:justify-between backdrop-filter backdrop-blur-xl lg:backdrop-filter-none rounded-3xl bg-white/80 lg:bg-transparent px-5 lg:px-0 mt-4">
 				<div class="h-full flex justify-start items-center">
 					<a href="#">
-						<img class="max-w-[200px] lg:max-w-[150px] w-full" src="/image/logo.png" alt="">
+						<img class="w-[200px] lg:w-[150px]" :src="require('~/assets/svg/logo.svg')" alt="">
 					</a>
 				</div>
 				<ul class="flex justify-center space-x-7 lg:hidden">
