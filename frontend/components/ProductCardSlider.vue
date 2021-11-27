@@ -1,7 +1,7 @@
 <template>
 	<div ref="slider" class="swiper-container h-full relative overflow-hidden">
 		<div class="swiper-wrapper h-full relative z-10">
-			<div class="swiper-slide w-full h-full" v-for="slide in slides">
+			<div class="swiper-slide w-full h-full md:pb-10" v-for="(slide, idx) in gallery" :key="`slide-${idx}`">
 				<img class="w-full h-full object-center object-cover" :src="slide" alt="">
 			</div>
 		</div>
@@ -25,14 +25,12 @@
 <script>
 
 	export default {
+		props: {
+			gallery: Array
+		},
 		data () {
 			return {
-				swiper: null,
-				slides: [
-					'https://cdn.rbt.ru/images/gen/item_image/image/5807/24/580642_r3586.jpg',
-					'https://pbs.twimg.com/media/Cikv2JUUoAA5BGe.jpg',
-					'https://uwalls.com/img/gallery/8/thumbs/thumb_l_nus_21895.jpg',
-				],
+				swiper: null
 			}
 		},
 		mounted () {

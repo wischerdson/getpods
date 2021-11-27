@@ -2,8 +2,7 @@
 	<div>
 		<WelcomeSection />
 		<div class="space-y-14">
-			<!-- <ProductCardSection /> -->
-			<ProductCardSection />
+			<CatalogSection />
 		</div>
 	</div>
 </template>
@@ -11,46 +10,10 @@
 <script>
 
 	import WelcomeSection from '~/sections/home/Welcome'
-	import ProductCardSection from '~/sections/home/ProductCard'
+	import CatalogSection from '~/sections/home/Catalog'
 
 	export default {
-		components: { WelcomeSection, ProductCardSection },
-		data: () => {
-			return {
-				products: [
-					{
-						title: 'AirPods 2',
-						subtitle: 'Беспроводная зарядка',
-						description: `Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod`,
-						price: '2499',
-					},
-					{
-						title: 'AirPods',
-						subtitle: '',
-						description: '',
-						price: '',
-					},
-					{
-						title: 'AirPods',
-						subtitle: '',
-						description: '',
-						price: '',
-					},
-					{
-						title: 'AirPods',
-						subtitle: '',
-						description: '',
-						price: '',
-					},
-					{
-						title: 'AirPods',
-						subtitle: '',
-						description: '',
-						price: '',
-					}
-				]
-			}
-		}
+		components: { WelcomeSection, CatalogSection }
 	}
 
 </script>
