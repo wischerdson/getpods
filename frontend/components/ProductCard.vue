@@ -5,7 +5,7 @@
 				<div class="h-full bg-gray-50 flex items-center p-16 md:p-10 sm:p-6">
 					<div>
 						<h2 class="font-bold text-5xl md:text-5xl sm:text-4xl text-gray-900">{{ product.title }}</h2>
-						<h3 class="subtitle font-semibold text-4xl md:text-3xl sm:text-2xl mt-6 md:mt-4 sm:mt-2 text-gray-400">{{ product.subtitle }}</h3>
+						<h3 class="subtitle font-semibold text-3xl sm:text-2xl mt-4 sm:mt-2 text-gray-400">{{ product.subtitle }}</h3>
 						<p class="mt-4 text-lg md:text-base" v-html="product.description"></p>
 						<div class="mt-6">
 							<p class="inline-block text-xl font-regular bg-blue-600 rounded-full py-1 px-4 text-white">{{ product.price }} ₽</p>

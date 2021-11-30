@@ -1,11 +1,11 @@
 <template>
 	<footer class="mt-28">
 		<div class="container">
-			<div class="flex justify-between mb-6">
-				<a href="#">
+			<div class="flex justify-between mb-6 md:flex-col md:items-center">
+				<a class="md:mb-6" href="#">
 					<img class="w-[200px] lg:w-[150px]" :src="require('~/assets/svg/logo.svg')" alt="">
 				</a>
-				<ul class="flex space-x-10 items-center">
+				<ul class="flex space-x-10 items-center sm:flex-col-reverse sm:space-x-0 sm:space-y-4">
 					<li>
 						<a class="hover:underline" href="#">Политика конфиденциальности</a>
 					</li>
@@ -13,7 +13,7 @@
 						<a class="hover:underline" href="#">Публичная оферта</a>
 					</li>
 					<li>
-						<a class="font-medium text-lg" href="#">8 910 112 71 74</a>
+						<a class="font-medium text-lg" href="#">8 098 765 43 21</a>
 					</li>
 				</ul>
 			</div>
