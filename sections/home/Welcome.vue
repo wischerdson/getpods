@@ -5,7 +5,7 @@
 				<h1 class="text-6xl xl:text-5xl md:text-3xl font-bold leading-[1.15] lg:text-center" data-aos="fade-up"><!-- Лучшее качество AirPods на рынке по доступной цене -->Выберите свои AirPods.</h1>
 				<p class="mt-8 text-xl xl:text-md md:text-lg lg:text-center" data-aos="fade-up" data-aos-delay="150"><b>AirPods</b> — уникальные беспроводные наушники. Они легко настраиваются и дарят превосходный звук.</p>
 				<div class="lg:text-center" data-aos="fade-up" data-aos-delay="300">
-					<a class="btn btn-primary mt-8" href="#">Подробнее</a>
+					<a class="btn btn-primary mt-8" data-scroll href="#airpods-2">Подробнее</a>
 				</div>
 			</div>
 			<div class="max-w-xl xl:max-w-sm mt-14 lg:mx-auto lg:mb-6" data-aos="fade" data-aos-delay="400">

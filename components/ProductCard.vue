@@ -1,5 +1,5 @@
 <template>
-	<section>
+	<section :id="product.anchor">
 		<div class="container">
 			<div class="card bg-white rounded-3xl grid grid-cols-2 lg:flex lg:flex-col-reverse overflow-hidden relative z-10">
 				<div class="h-full bg-gray-50 flex items-center p-16 md:p-10 sm:p-6">
