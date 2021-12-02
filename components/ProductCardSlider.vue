@@ -1,8 +1,8 @@
 <template>
-	<div ref="slider" class="swiper-container h-full relative overflow-hidden">
-		<div class="swiper-wrapper h-full relative z-10">
+	<div ref="slider" class="swiper-container h-full relative overflow-hidden lg:after:block lg:after:pt-full">
+		<div class="swiper-wrapper absolute inset-0 z-10">
 			<div class="swiper-slide w-full h-full md:pb-10" v-for="(slide, idx) in gallery" :key="`slide-${idx}`">
-				<img class="w-full h-full object-center object-cover" :src="slide" alt="">
+				<img class="w-full h-full object-center object-contain lg:object-cover" :src="slide" alt="">
 			</div>
 		</div>
 
@@ -68,6 +68,9 @@
 				@apply bg-blue-600;
 			}
 		}
+	}
+	.swiper-wrapper {
+
 	}
 
 </style>

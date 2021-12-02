@@ -4,7 +4,7 @@ export default {
 
 	// Global page headers: https://go.nuxtjs.dev/config-head
 	head: {
-		title: 'nuxtapp',
+		title: 'GetPods.ru - Купить наушники Apple AirPods',
 		htmlAttrs: {
 			lang: 'en'
 		},
@@ -50,26 +50,6 @@ export default {
 
 	// Build Configuration: https://go.nuxtjs.dev/config-build
 	build: {
-		extractCSS: true,
-		optimization: {
-			splitChunks: {
-				cacheGroups: {
-					styles: {
-						name: 'styles',
-						test: /\.(css|vue)$/,
-						chunks: 'all',
-						enforce: true
-					}
-				}
-			}
-		}
-	},
-
-	server: {
-		host: '0.0.0.0'
-	},
-
-	generate: {
-		dir: '../public/dist'
+		extractCSS: true
 	},
 }
