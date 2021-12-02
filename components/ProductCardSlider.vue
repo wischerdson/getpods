@@ -69,8 +69,5 @@
 			}
 		}
 	}
-	.swiper-wrapper {
-
-	}
 
 </style>
